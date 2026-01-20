@@ -535,7 +535,7 @@ max-width: 1200px;
 
 .host-para {
     font-size: 1rem;
-    font-weight: 00;
+    font-weight: 500;
     color: rgb(194, 185, 185);
     line-height: 24px;
     padding: 16px;
@@ -602,7 +602,7 @@ max-width: 1200px;
     padding: 120px;
 }
 .footer-list{
-    
+
 }
 
 
