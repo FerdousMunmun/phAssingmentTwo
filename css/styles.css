@@ -191,7 +191,7 @@ border: 1px solid #00FF88;
 }
 
 .section-title{
-    font-size: 48;
+    font-size: 3rem;
     font-weight: 700;
     color: #FFFFFF;
     padding-bottom: 10px;
@@ -238,7 +238,7 @@ font-size: 3rem;
     transform: translateX(-5px);
     transition: 1s;
 }
-.awaerd-para{
+.award-para{
     font-size: 1rem;
     font-weight: 400;
     color: #FFFFFF;
@@ -262,6 +262,9 @@ font-size: 3rem;
     
    
 }
+.techwave-heading{
+    padding-bottom: 40px;
+}
 .techwave-section{
  max-width: 1200px;
  margin: 0 auto;
@@ -272,6 +275,16 @@ font-size: 3rem;
 }
 .Techwave-quality{
     max-width: 1200px;
+    display: grid;
+    gap: 16px;
+    grid-template-areas: 
+
+    "audio mobile mobile"
+    "audio community community"
+    "interviews interviews resourse" ;
+    
+    
+  
     
 }
 .mobile{
@@ -287,43 +300,162 @@ font-size: 3rem;
 .interviews{
     grid-area: interviews;
 }
+.resourse{
+    grid-area: resourse;
+}
 
 .mobile ,.community{
-    max-width: 800px;
+    max-width: 100%;
+     text-align: left;
     background: #351165;
-    padding: 33px 40px;
+    padding: 40px 60px;
     border-radius: 8px;
 }
+
+.mobile:hover{
+    background:rgb(1, 51, 68);
+   
+}
+.community:hover{
+    background:rgb(1, 51, 68);
+   
+}
+.interviews:hover{
+    background:rgb(1, 51, 68);
+   
+}
+.audio:hover{
+    background:rgb(1, 51, 68);
+   
+}
 .audio{
-    max-width: 300px;
+    max-width: 100%;
+    text-align: left;
      background: #351165;
-    padding: 40px;
+    padding:80px 30px;
     border-radius: 8px;
 }
 .interviews{
-    max-width: 800px;
+    max-width: 100%;
+     text-align: left;
     background: #351165;
-    padding: 40px 160px 40px 40px;
+    padding: 40px 60px;
     border-radius: 8px;
+
    
 }
 .resourse{
-    max-width: 380px;
+    max-width:100%;
+     text-align: left;
     background: #351165;
-    padding: 100px 200px 40px 40px;
+    padding: 60px 40px;
+}
+.tec-img{
+    margin-right: 10px;
 }
 .tech-text{
-font-size: 1.5rem;
-font-weight: 600;
+font-size: 1.25rem;
+font-weight: 700;
 color: #FFFFFF;
+padding-top: 16px;
+padding-bottom: 16px;
+padding-right: 20px;
+
+
 }
 .tech-para{
-    font-size: 1rem;
+font-size: 1rem;
 font-weight: 400;
 color: #FFFFFF;
+padding-right: 15px;
+
 }
 /* techwave part end */
+/* feature part start */
 
+.feature-title{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
+}
+    
+.feature-card{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: left;
+    margin-top: 40px;
+    gap: 20px;
+   
+}
+.card-text{
+     padding-top: 24px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.card-para{
+    font-size: 1rem;
+    font-weight: 00;
+    color: rgb(194, 185, 185);
+    line-height: 24px;
+    padding: 12px;
+   
+}
+.card-time{
+    font-size: 1rem;
+    font-weight: 600;
+    color:#00FF88;
+     margin-left: 10px;
+
+}
+.card-time img{
+    margin-right: 10px;
+   vertical-align: middle;
+}
+.card-content{
+    
+    max-width: 380px;
+    background-color: #250D44;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 10px;
+    margin-bottom: 120px;
+    margin-top: 1px;
+
+}
+
+.card-media{
+  width: 100%;
+  aspect-ratio: 16 / 9;  
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 2px;
+  background: #000;
+}
+
+
+.card-media iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+
+.card-media video{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;  
+}
+/* feature part end */
+/* host part start */
+
+/* host part end */
 
 
 
@@ -333,6 +465,7 @@ color: #FFFFFF;
   .nav-item, .nav-links{
     flex-direction: column;
   }
+  
 
 
 .nav-btn{
@@ -366,7 +499,34 @@ padding-bottom: 15px;
 
 .podcast-award{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2px;
 }
+.award-para{
+    padding-bottom: 20px;
+}
+.techwave-heading{
+    padding-top: 10px;
+    
+}
+.techwave-section{
+    padding-top: 20px;
+    padding-bottom: 16px;
+}
+.Techwave-quality{
+    display: flex;
+    flex-direction: column;
+}
+.audio,.resourse{
+    margin-left: 20px;
+}
+
+  .feature-card{
+    grid-template-columns: 1fr;
+  }
+  .card-content{
+    max-width: 100%;
+    padding: 18px;         
+    margin-bottom: 60px;
+  }
   }
